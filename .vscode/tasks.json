@@ -1,0 +1,52 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run all tests",
+      "type": "shell",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "command": "yarn ui-tests",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run selected test file in headless mode",
+      "type": "shell",
+      "group": "test",
+      "command": "yarn ui-tests ${fileBasenameNoExtension}",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run selected test file in headful mode",
+      "type": "shell",
+      "group": "test",
+      "command": "yarn ui-tests-headful ${fileBasenameNoExtension}",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Generate and open test report",
+      "type": "shell",
+      "group": "test",
+      "command": "yarn ui-tests-report",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
