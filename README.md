@@ -25,16 +25,27 @@ Run `yarn` in the root directory of the repository.
 
 ### Prerequisites
 
-To work with the tests the Theia application under test needs to be running.
-Please start your Theia application before running the tests.
+The Theia application under test already needs to be running.
+Please start a Theia application before running the tests.
 
 ### Running the tests headless
 
-To start the tests run `yarn ui-tests` in this directory. This will start the tests in a headless state. There is also a VSCode task available called
-`Run all tests in headless mode`.
+To start the tests run `yarn ui-tests` in this directory.
+This will start the tests in a headless state.
+There is also a VS Code task available called `Run all tests`.
 
 To only run a single test file, the path of a test file can be set with `yarn ui-tests <path-to-file>` or `yarn ui-tests -g "<partial test file name>"`.
+Please note that you can't use the file extension `.ts` in the expression used in `<path-to-file>`.
+Either drop the file extension entirely, or use `.js` instead.
 See the [Playwright Test command line documentation](https://playwright.dev/docs/intro#command-line).
+
+#### Examples
+
+```bash
+yarn ui-tests # run all tests
+yarn ui-tests tests/ # run all test cases in folder tests
+yarn ui-tests theia-app # run all test cases that contain theia-app in their path name
+```
 
 ### Running the tests headful, reporting and debugging
 
