@@ -39,7 +39,7 @@ To run the tests headful, simply enable the checkbox `Show browser` in the Playw
 
 ### Running the tests headless via CLI
 
-To start the tests run `yarn ui-tests` in the folder `playwright`.
+To start the tests run `yarn ui-tests`.
 This will start the tests in a headless state.
 
 To only run a single test file, the path of a test file can be set with `yarn ui-tests <path-to-file>` or `yarn ui-tests -g "<partial test file name>"`.
