@@ -14,8 +14,8 @@
     "ui-tests-report": "yarn ui-tests-report-generate && allure open allure-results/allure-report"
   },
   "dependencies": {
-    "@playwright/test": "^1.32.1",
-    "@theia/playwright": "next"
+    "@playwright/test": "^1.42.1",
+    "@theia/playwright": "1.47.1"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^5.57.1",
